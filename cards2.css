@@ -1,0 +1,159 @@
+body {
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+section {
+    background-image: url("Wall.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(131, 2, 2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header #XI {
+    padding: 15px;
+    border-radius: 10px 0 10px 0;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(131, 2, 2);
+}
+
+.header #Day {
+    padding: 15px;
+    border-radius: 0 10px 0 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(131, 2, 2);
+}
+
+.event-title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 130px; /* Adjust this value to position the text exactly above the box */
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    padding: 15px;
+    font-size: 17px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(131, 2, 2);
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* For Tablets (iPads) */
+@media (max-width: 1130px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section {
+        width: 250px;
+        height: 400px;
+    }
+
+    .event-title {
+        font-size: 26px;
+        top: 130px;
+    }
+
+    .footer {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    
+    
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+        background-image: url("Wall.jpg");
+        /* background-size: contain; */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    section {
+        width: 90%;
+        height: 350px;
+    }
+
+    .event-title {
+        font-size: 24px;
+        top: 80px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* For Smaller Mobile Screens */
+@media (max-width: 480px) {
+    .container{
+        width: 85%;
+    }
+    section {
+        width: 95%;
+        height: 320px;
+    }
+
+    .event-title {
+        font-size: 22px;
+        top: 60px;
+    }
+
+    .footer {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
